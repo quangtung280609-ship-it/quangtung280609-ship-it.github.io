@@ -1,85 +1,279 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dự Án Khoa Học & Công Nghệ</title>
+    <title>Nguyễn Quang Tùng | Science Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-    <h1>Portfolio Dự Án Khoa Học & Công Nghệ</h1>
-    <p>Nguyễn Quang Tùng</p>
-</header>
+    <!-- NAVBAR -->
 
-<section class="hero">
-    <h2>Những dự án đã tham gia</h2>
-    <p>Nghiên cứu và phát triển các giải pháp IoT, Robot và Chuyển đổi số.</p>
-</section>
-
-<section class="projects">
-
-    <div class="card">
-        <h2>🌍 AIR-Sensor</h2>
-        <p class="tag">IoT • Environmental Monitoring</p>
-
-        <p>
-            Hệ thống đo chất lượng không khí theo thời gian thực sử dụng
-            cảm biến PM2.5, nhiệt độ và độ ẩm.
-        </p>
+    <nav>
+        <div class="logo">
+            Science Portfolio
+        </div>
 
         <ul>
-            <li>Arduino/ESP32</li>
-            <li>Cảm biến PM2.5</li>
-            <li>LCD hiển thị dữ liệu</li>
-            <li>ThingSpeak Cloud</li>
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#projects">Dự án</a></li>
+            <li><a href="#skills">Kỹ năng</a></li>
+            <li><a href="#awards">Thành tích</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
         </ul>
+    </nav>
 
-        <a href="#" class="btn">Xem chi tiết</a>
-    </div>
+    <!-- HERO -->
 
-    <div class="card">
-        <h2>🤖 Smart Agriculture</h2>
-        <p class="tag">Robot • IoT • Digital Economy</p>
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <h1>Nguyễn Quang Tùng</h1>
+
+            <h2>Researcher • IoT Developer • Robotics Enthusiast</h2>
+
+            <p>
+                Đam mê nghiên cứu khoa học, hệ thống nhúng, IoT,
+                Robot tự động và ứng dụng công nghệ vào đời sống.
+            </p>
+
+            <a href="#projects" class="btn">
+                Xem dự án
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="images/avatar.jpg">
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2 class="title">Giới thiệu</h2>
+
+        <div class="about-container">
+
+            <p>
+                Tôi là Nguyễn Quang Tùng, học sinh yêu thích lĩnh vực
+                Khoa học Kỹ thuật và Công nghệ.
+
+                Tôi đã tham gia nghiên cứu nhiều dự án về:
+
+                ✔ Internet of Things (IoT)
+
+                ✔ Chất lượng môi trường
+
+                ✔ Robot nông nghiệp
+
+                ✔ Chuyển đổi số trong nông nghiệp
+
+                ✔ Hệ thống giám sát thời gian thực
+
+                Mục tiêu của tôi là phát triển những giải pháp công nghệ
+                có khả năng giải quyết các vấn đề thực tiễn của xã hội.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2 class="title">Dự án nghiên cứu</h2>
+
+        <div class="project-grid">
+
+            <!-- AIR SENSOR -->
+
+            <div class="project-card">
+
+                <img src="images/airsensor.jpg">
+
+                <div class="project-content">
+
+                    <h3>AIR-Sensor</h3>
+
+                    <span>Air Quality Monitoring System</span>
+
+                    <p>
+                        Hệ thống đo chất lượng không khí thời gian thực
+                        sử dụng cảm biến PM2.5, nhiệt độ và độ ẩm.
+                    </p>
+
+                    <ul>
+                        <li>ESP32</li>
+                        <li>PM2.5 Sensor</li>
+                        <li>ThingSpeak Cloud</li>
+                        <li>LCD Display</li>
+                    </ul>
+
+                    <button>Xem chi tiết</button>
+
+                </div>
+
+            </div>
+
+            <!-- SMART AGRICULTURE -->
+
+            <div class="project-card">
+
+                <img src="images/robot.jpg">
+
+                <div class="project-content">
+
+                    <h3>Smart Agriculture</h3>
+
+                    <span>Robot + IoT + Digital Economy</span>
+
+                    <p>
+                        Hệ thống nông nghiệp thông minh tích hợp robot,
+                        cảm biến IoT và web truy xuất nguồn gốc.
+                    </p>
+
+                    <ul>
+                        <li>Robot giám sát</li>
+                        <li>IoT Sensors</li>
+                        <li>QR Traceability</li>
+                        <li>Dashboard</li>
+                    </ul>
+
+                    <button>Xem chi tiết</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2 class="title">Kỹ năng</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill">
+                <i class="fa-solid fa-microchip"></i>
+                <h3>Arduino</h3>
+            </div>
+
+            <div class="skill">
+                <i class="fa-solid fa-wifi"></i>
+                <h3>IoT</h3>
+            </div>
+
+            <div class="skill">
+                <i class="fa-solid fa-code"></i>
+                <h3>C++</h3>
+            </div>
+
+            <div class="skill">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Web Dev</h3>
+            </div>
+
+            <div class="skill">
+                <i class="fa-solid fa-robot"></i>
+                <h3>Robotics</h3>
+            </div>
+
+            <div class="skill">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TIMELINE -->
+
+    <section id="awards">
+
+        <h2 class="title">Thành tích</h2>
+
+        <div class="timeline">
+
+            <div class="event">
+                <h3>2025</h3>
+                <p>Hoàn thành dự án AIR-Sensor.</p>
+            </div>
+
+            <div class="event">
+                <h3>2026</h3>
+                <p>Phát triển mô hình Smart Agriculture.</p>
+            </div>
+
+            <div class="event">
+                <h3>Tương lai</h3>
+                <p>Nghiên cứu AI và Robotics.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2 class="title">Liên hệ</h2>
+
+        <form>
+
+            <input type="text" placeholder="Họ tên">
+
+            <input type="email" placeholder="Email">
+
+            <textarea rows="6"
+                placeholder="Nội dung"></textarea>
+
+            <button>Gửi</button>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>Nguyễn Quang Tùng</h3>
 
         <p>
-            Mô hình nông nghiệp thông minh tích hợp robot giám sát,
-            cảm biến IoT và nền tảng truy xuất nguồn gốc nông sản.
+            Science • Technology • Innovation
         </p>
 
-        <ul>
-            <li>Robot giám sát</li>
-            <li>Cảm biến môi trường</li>
-            <li>Dashboard quản lý</li>
-            <li>QR truy xuất nguồn gốc</li>
-        </ul>
+        <div class="social">
 
-        <a href="#" class="btn">Xem chi tiết</a>
-    </div>
+            <i class="fab fa-facebook"></i>
 
-</section>
+            <i class="fab fa-github"></i>
 
-<section class="skills">
-    <h2>Kỹ năng & Công nghệ</h2>
+            <i class="fab fa-linkedin"></i>
 
-    <div class="skill-box">
-        <span>Arduino</span>
-        <span>ESP32</span>
-        <span>C++</span>
-        <span>IoT</span>
-        <span>ThingSpeak</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Robot</span>
-        <span>Sensors</span>
-    </div>
-</section>
+        </div>
 
-<footer>
-    <p>© 2026 Nguyễn Quang Tùng | Science & Technology Projects</p>
-</footer>
+    </footer>
 
 </body>
+
 </html>
