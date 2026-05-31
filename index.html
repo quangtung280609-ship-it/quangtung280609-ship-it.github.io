@@ -1,210 +1,214 @@
-```html
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gaming Arena</title>
+<title>Air Quality Measuring System</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Segoe UI,sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 body{
-    min-height:100vh;
-    background:#0f172a;
+    background:#f4f7fa;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0099ff,#00cc99);
     color:white;
-}
-
-/* Thanh menu */
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    background:rgba(0,0,0,0.4);
-    backdrop-filter:blur(10px);
-}
-
-.logo{
-    font-size:2rem;
-    font-weight:bold;
-    color:#00ffff;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:30px;
-}
-
-nav a{
-    text-decoration:none;
-    color:white;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#00ffff;
-}
-
-/* Hero */
-.hero{
-    height:90vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
     text-align:center;
-    background:
-    linear-gradient(rgba(0,0,0,.5),
-    rgba(0,0,0,.5)),
-    url("https://images.unsplash.com/photo-1542751371-adc38448a05e")
-    center/cover;
+    padding:60px 20px;
 }
 
-.hero h1{
-    font-size:5rem;
-    margin-bottom:20px;
-    text-shadow:0 0 20px cyan;
-}
-
-.hero p{
-    font-size:1.3rem;
-    max-width:700px;
-    margin-bottom:30px;
-}
-
-.btn{
-    padding:15px 40px;
-    border:none;
-    border-radius:30px;
-    background:#00ffff;
-    color:black;
-    font-size:1rem;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:scale(1.1);
-    box-shadow:0 0 25px cyan;
-}
-
-/* Danh sách game */
-.games{
-    padding:80px 10%;
-}
-
-.games h2{
-    text-align:center;
-    margin-bottom:50px;
+header h1{
     font-size:3rem;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
 }
 
 .card{
-    background:#1e293b;
-    border-radius:20px;
-    overflow:hidden;
-    transition:.3s;
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 20px cyan;
+.card h2{
+    color:#0099ff;
+    margin-bottom:15px;
 }
 
-.card img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
-.card-content{
+.feature{
+    background:#eef8ff;
     padding:20px;
-}
-
-.card h3{
-    margin-bottom:10px;
-}
-
-.card p{
-    color:#cbd5e1;
-}
-
-/* Footer */
-footer{
+    border-radius:10px;
     text-align:center;
-    padding:30px;
-    background:#020617;
-    margin-top:50px;
+}
+
+.feature h3{
+    margin-bottom:10px;
+    color:#0077cc;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.stat{
+    background:#00cc99;
+    color:white;
+    padding:20px;
+    border-radius:12px;
+    min-width:180px;
+    text-align:center;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 </style>
 </head>
-
 <body>
 
-<nav>
-    <div class="logo">GAME HUB</div>
-    <ul>
-        <li><a href="#">Trang chủ</a></li>
-        <li><a href="#">Game</a></li>
-        <li><a href="#">BXH</a></li>
-        <li><a href="#">Liên hệ</a></li>
-    </ul>
-</nav>
+<header>
+    <h1>🌍 AIR QUALITY MEASURING SYSTEM</h1>
+    <p>Real-Time Air Monitoring Using PM2.5 Sensors and IoT Technology</p>
+</header>
 
-<section class="hero">
-    <h1>WELCOME GAMER</h1>
-    <p>Khám phá thế giới game đầy thử thách, cạnh tranh và giải trí.</p>
-    <button class="btn">PLAY NOW</button>
-</section>
+<div class="container">
 
-<section class="games">
-    <h2>Game Nổi Bật</h2>
+    <div class="card">
+        <h2>📖 Project Overview</h2>
+        <p>
+            This project develops a low-cost air quality monitoring system
+            capable of measuring PM2.5 concentration, temperature and humidity
+            in real time. Data are processed by a microcontroller and displayed
+            on an LCD screen while being stored online using ThingSpeak.
+        </p>
+    </div>
 
-    <div class="grid">
-        <div class="card">
-            <img src="https://picsum.photos/400/250?1">
-            <div class="card-content">
-                <h3>Battle Arena</h3>
-                <p>Chiến đấu và leo rank cùng bạn bè.</p>
+    <div class="card">
+        <h2>⚙️ Main Components</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>PM2.5 Sensor</h3>
+                <p>Measures particulate matter concentration in the air.</p>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="https://picsum.photos/400/250?2">
-            <div class="card-content">
-                <h3>Speed Racing</h3>
-                <p>Trải nghiệm tốc độ cực đỉnh.</p>
+            <div class="feature">
+                <h3>Temperature Sensor</h3>
+                <p>Monitors environmental temperature.</p>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="https://picsum.photos/400/250?3">
-            <div class="card-content">
-                <h3>Zombie Survival</h3>
-                <p>Sinh tồn trong thế giới hậu tận thế.</p>
+            <div class="feature">
+                <h3>Humidity Sensor</h3>
+                <p>Measures relative humidity.</p>
             </div>
+
+            <div class="feature">
+                <h3>Microcontroller</h3>
+                <p>Processes sensor data and controls the system.</p>
+            </div>
+
+            <div class="feature">
+                <h3>LCD Display</h3>
+                <p>Displays measurements in real time.</p>
+            </div>
+
+            <div class="feature">
+                <h3>ThingSpeak</h3>
+                <p>Cloud platform for data visualization and storage.</p>
+            </div>
+
         </div>
     </div>
-</section>
+
+    <div class="card">
+        <h2>🔄 System Workflow</h2>
+
+        <ol>
+            <li>Sensors collect environmental data.</li>
+            <li>Data are sent to the microcontroller.</li>
+            <li>The microcontroller processes the readings.</li>
+            <li>Results are displayed on LCD.</li>
+            <li>Data are uploaded to ThingSpeak for monitoring.</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h2>📊 Experimental Results</h2>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3>27°C</h3>
+                <p>Temperature</p>
+            </div>
+
+            <div class="stat">
+                <h3>61%</h3>
+                <p>Humidity</p>
+            </div>
+
+            <div class="stat">
+                <h3>16 µg/m³</h3>
+                <p>PM2.5</p>
+            </div>
+
+            <div class="stat">
+                <h3>85%</h3>
+                <p>Accuracy</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🚀 Future Improvements</h2>
+
+        <ul>
+            <li>Wireless communication (Wi-Fi / LoRa).</li>
+            <li>Mobile application integration.</li>
+            <li>Cloud-based analytics dashboard.</li>
+            <li>AI-based pollution prediction.</li>
+        </ul>
+    </div>
+
+</div>
 
 <footer>
-    © 2026 Gaming Arena
+    <p>© 2026 AIR-SENSOR Project | Nguyen Quang Tung & Le Chi Tuyen</p>
 </footer>
 
 </body>
 </html>
-```
